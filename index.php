@@ -208,7 +208,7 @@ $name = $email = $gender = $comment = $website = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
    if (empty($_POST["name"])) {
-     $nameErr = "Name is required";
+     $nameErr = "Name is required, give it to me";
    } else {
      $name = test_input($_POST["name"]);
      // check if name only contains letters and whitespace
